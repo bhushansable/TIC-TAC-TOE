@@ -65,6 +65,19 @@ h1{
     width: 100px;
 }
 
+#reset-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#reset {
+  height: 45px;
+  width: 140px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* media qurey */
 
 @media (max-width: 480px) {
