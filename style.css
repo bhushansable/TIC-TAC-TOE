@@ -53,6 +53,17 @@ h1{
     color: white;
 }
 
+#play-again{
+    padding-left: 700px;
+    
+}
+.hidden{
+    display: none;
+}
+#play{
+    height: 50px;
+    width: 100px;
+}
 
 /* media qurey */
 
@@ -65,4 +76,39 @@ h1{
         padding-left: 50px;
     }
     #winner-box{padding-top: 0px;}
+
+    #play-again{
+    padding-left: 190px;}
+   
+}
+
+@media (max-width: 350px) {
+    h1{
+        padding-top: 50px;
+    }
+    
+    #winner{
+        padding-left: 50px;
+    }
+    #winner-box{padding-top: 0px;}
+
+    #play-again{
+    padding-left: 130px;}
+   
+}
+
+
+@media (max-width: 400px) {
+    h1{
+        padding-top: 50px;
+    }
+    
+    #winner{
+        padding-left: 50px;
+    }
+    #winner-box{padding-top: 0px;}
+
+    #play-again{
+    padding-left: 150px;}
+   
 }

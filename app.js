@@ -2,19 +2,34 @@
 
 let boxes = document.querySelectorAll(".btn");
 let winnerShow = document.querySelector("#winner");
-
+let play = document.querySelector(".hidden");
 let player =true;
 
 let gamePatterns = [[0,1,2],[0,3,6],[0,4,8],[1,4,7],[2,5,8],[2,4,6],[3,4,5],[6,7,8]];
 
+
+const playAagin = ()=>{
+    player = true
+    play.classList.add("hidden")
+    winnerShow.innerText =""
+    enble()
+}
 const disable =()=>{
     for(let box of boxes){
         box.disabled = true
     }
 }
 
+const enble =()=>{
+    for(let box of boxes){
+        box.disabled = false
+        box.innerText=""
+    }
+}
+
 const showWin =(winner)=>{
     winnerShow.innerText=`Winner is ${winner}`
+    play.classList.remove("hidden")
     disable();
     
 }
@@ -49,3 +64,5 @@ win =()=>{
         }})
     
 }
+
+play.addEventListener("click",playAagin)
